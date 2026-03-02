@@ -29,14 +29,14 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Trivy FS scan
-        uses: aquasec/trivy-action@v0.11.0
+        uses: aquasec/trivy-action@master
         with:
           scan-type: fs
           format: table
           exit-code: 1
 
       - name: Trivy Go module scan
-        uses: aquasec/trivy-action@v0.11.0
+        uses: aquasec/trivy-action@master
         with:
           scan-type: go
           format: table

@@ -11,6 +11,8 @@ repos:
         args: ['--maxkb=500']
       - id: no-commit-to-branch
         args: ['--branch', 'main']
+      - id: mixed-line-ending
+        args: ['--fix=lf']
 
   - repo: https://github.com/Yelp/detect-secrets
     rev: v1.5.0
